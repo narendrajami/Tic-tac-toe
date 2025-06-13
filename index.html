@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="container">
+    <div class="game">
+      <button class="box"></button><!-- repeat 9 times -->
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+  </div>
+  <button id="reset">Reset Game</button>
+
+  <div class="msg-container hide">
+    <p id="msg">Winner</p>
+  </div>
+
+  <img id="celebrate-gif" src="excited.gif" alt="Celebration" class="gif hide" />
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <audio id="last-sound" src="sound-effect-twinklesparkle-115095.mp3" preload="auto"></audio>
+  <audio id="click-sound" src="ting.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

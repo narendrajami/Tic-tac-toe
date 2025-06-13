@@ -1,0 +1,52 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: lightcyan;
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 { margin: 20px; }
+.container {
+  display:flex;
+  justify-content:center;
+}
+.game {
+  display:grid;
+  grid-template: repeat(3, 90px) / repeat(3, 90px);
+  gap:5px;
+}
+.box {
+  background: lightblue;
+  font-size: 48px;
+  border: 2px solid darkgray;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius:8px;
+
+
+}
+/* Make the GIF centered and responsive */
+.gif {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+}
+
+
+
+.box:hover { transform: scale(1.05);background-color: blue ;box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+#reset {
+  margin:20px;
+  padding:10px 20px;
+  font-size:18px;
+}
+.msg-container { margin-top:20px; }
+.hide { display:none; }
+@media (max-width: 400px) {
+    .box {
+    font-size: calc(6vw + 6px);
+  }
+  #reset {
+    width: 80%;
+    font-size: calc(0.8rem + 0.8vw);
+  }
+}
